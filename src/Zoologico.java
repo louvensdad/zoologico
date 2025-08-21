@@ -1,20 +1,20 @@
-// Classe abstrata representando um animal
-abstract class Animal {
+// Classe animal
+abstract class Animal{
     protected String nome;
 
-    public Animal(String nome) {
-        this.nome = nome;
+    public Animal (String nome) this.nome=nome;
+
     }
 
-    // Método abstrato que será implementado pelas subclasses
-    public abstract void emitirSom();
+    // Método abstrato 
+    public abstract void emitirSom():
 }
 
-// Subclasse Leão
+// Subclasse Leão 
 class Leao extends Animal {
-    public Leao() {
-        super("Leão");
-    }
+public Leao(){
+super("Leão");
+}
 
     public void emitirSom() {
         System.out.println(nome + ": Rooooar!");
