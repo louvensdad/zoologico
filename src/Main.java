@@ -8,9 +8,9 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             List<Animal> animais = new ArrayList<>();
 
-            System.out.println("Digite os nomes dos animais separados por vírgula (Leão, Macaco, Elefante):");
+            System.out.println("Digite os nome dos amimais separado por vigula (Leão,Macaco,Elefante):");
             String[] escolhidos = scanner.nextLine().split(",");
-
+ 
             for (String nome : escolhidos) {
                 switch (nome.trim().toLowerCase()) {
                     case "leão":
@@ -27,7 +27,7 @@ public class Main {
                 }
             }
 
-            System.out.println("\nSons dos animais:");
+            System.out.println("\n Sons dos animais:");
             for (Animal a : animais) {
                 a.emitirSom();
             }
