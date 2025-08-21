@@ -6,11 +6,11 @@ abstract class Animal{
 
     }
 
-    // Método abstrato 
+    // Método 
     public abstract void emitirSom():
 }
 
-// Subclasse Leão 
+// Subclasse 
 class Leao extends Animal {
 public Leao(){
 super("Leão");
